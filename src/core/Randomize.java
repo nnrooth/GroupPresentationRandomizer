@@ -44,7 +44,7 @@ public class Randomize {
 		} 
 		catch (Exception e)
 		{
-			// Not sure what happened...
+			// Needs more flux capacitors!!!
 			System.err.printf("[!] OOPS... we dun goofed\n");
 			return;
 		}
