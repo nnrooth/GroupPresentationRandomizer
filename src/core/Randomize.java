@@ -57,7 +57,7 @@ public class Randomize {
 				randomGroups[n++] = groups.remove(randy.nextInt(groups.size())));
 		
 		// Determine newline type to use. If win use CRLF, else assume Unix and use LF
-		String newline = System.getProperty("os.name").indexOf("win") >= 0 ? "\r\n" : "\n"; 
+		String newline = System.getProperty("os.name").toLowerCase().indexOf("win") >= 0 ? "\r\n" : "\n"; 
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileOut)))
 		{
 			// For each group in the randomized groups array
